@@ -42,7 +42,7 @@ under the License.
       </span>
     </a>
     <div class="tocify-wrapper">
-      <%= image_tag "logo.png" %>
+      <%= image_tag "logo1.png" %>
       <% if language_tabs.any? %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
@@ -62,6 +62,7 @@ under the License.
       <% end %>
       <div id="toc">
       </div>
+      <div id="toc-footer">
       <% if current_page.data.toc_footers %>
         <ul class="toc-footer">
           <% current_page.data.toc_footers.each do |footer| %>
@@ -69,6 +70,7 @@ under the License.
           <% end %>
         </ul>
       <% end %>
+</div>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>

@@ -2,6 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700i,900');
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
@@ -46,6 +47,10 @@ html, body {
   width: 20px;
 }
 
+.tocify-wrapper .tocify-item > a:hover {
+  text-decoration:underline;
+  }
+
 @mixin embossed-bg {
   background:
     linear-gradient(to bottom, rgba(#000, 0.2), rgba(#000, 0) 8px),
@@ -67,14 +72,14 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
 
   // language selector for mobile devices
   .lang-selector {
     display: none;
     a {
-      padding-top: 0.5em;
+      padding-top: 0.6em;
       padding-bottom: 0.5em;
     }
   }
@@ -173,7 +178,7 @@ html, body {
 
   // This is the currently selected ToC entry
   .tocify-focus {
-    box-shadow: 0px 1px 0px $nav-active-shadow;
+    box-shadow: 0px 0px 0px $nav-active-shadow;
     background-color: $nav-active-bg;
     color: $nav-active-text;
   }
@@ -195,6 +200,8 @@ html, body {
       box-shadow: none; // otherwise it'll overflow out of the subheader
     }
   }
+
+  #toc-footer{margin-bottom:0px;margin-top:auto;}
 
   .toc-footer {
     padding: 1em 0;
@@ -358,11 +365,11 @@ html, body {
     font-size: 30px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0px solid #f0f4f7;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ddd;
-    background-image: linear-gradient(to bottom, #fff, #f9f9f9);
+    border-top: 1px solid #f0f4f7;
+    background-color:#fff;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -515,6 +522,9 @@ html, body {
   }
 }
 
+.lang-selector{padding:10px;}
+.lang-selector a.active{border-radius:5px;}
+
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
@@ -556,8 +566,8 @@ html, body {
       border-radius: 5px;
       padding: $code-annotation-padding;
       color: #ccc;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #404040;
+      border-top: 0px solid #000;
+      border-bottom: 0x solid #404040;
     }
   }
 }
