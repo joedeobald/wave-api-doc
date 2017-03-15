@@ -2,10 +2,8 @@
 title: WAVE API Reference
 
 language_tabs:
-  - ios
-  - ruby
-  - python
-  - javascripts
+  - swift: iOS
+  - java: Android
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -28,28 +26,14 @@ We have language bindings in iOS and Android! You can view code examples in the 
 
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('WAVEAPI')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('WAVEAPI')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
+```swift
 curl "api_endpoint_here"
   -H "Authorization: WAVEAPI"
 ```
 
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('WAVEAPI');
+```java
+curl "api_endpoint_heresss"
+  -H "Authorization: WAVEAPI"
 ```
 
 > Make sure to replace `WAVEAPI` with your API key.
@@ -68,51 +52,14 @@ You must replace <code>WAVEAPI</code> with your personal API key.
 
 ## Get All Kittens
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('WAVEAPI')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('WAVEAPI')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
+```swift
+curl "api_endpoint_here"
   -H "Authorization: WAVEAPI"
 ```
 
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('WAVEAPI');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+```java
+curl "api_endpoint_here"
+  -H "Authorization: WAVEAPI"
 ```
 
 This endpoint retrieves all kittens.
@@ -134,30 +81,14 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Kitten
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+```swift
+curl "api_endpoint_here"
+  -H "Authorization: WAVEAPI"
 ```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+```java
+curl "api_endpoint_here"
+  -H "Authorization: WAVEAPI"
 ```
 
 > The above command returns JSON structured like this:
