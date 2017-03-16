@@ -95,3 +95,4 @@ Instead of `rake build` and `rake deploy`, you should now run `bundle exec middl
 - Fixed bug where ids of header tags would have special characters that caused problems
 - Updated layout so that pages with disabled search wouldn't load search.js
 - Cleaned up Javascript
+
