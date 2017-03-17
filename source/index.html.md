@@ -16,7 +16,7 @@ includes:
 search: true
 ---
 
-# Introduction
+# Introductions
 
 Welcome to the WAVE API! You can use our API to access WAVE API endpoints, which can get information.
 
